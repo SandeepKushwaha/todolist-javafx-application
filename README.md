@@ -7,7 +7,7 @@ Simple application which manages your todo items.
 
 ![2. create new TODO.](https://github.com/SandeepKushwaha/todolist-javafx-application/blob/master/snaps/sample2.PNG)
 
-![3. Menu Bar.](https://github.com/SandeepKushwaha/todolist-javafx-application/blob/master/snaps/sample3.PNG)
+![3. Menu Bar.](https://github.com/SandeepKushwaha/todolist-javafx-application/blob/master/snaps/sample3.png)
 
 ![4. Short Item for Today's.](https://github.com/SandeepKushwaha/todolist-javafx-application/blob/master/snaps/sample4.PNG)
 
