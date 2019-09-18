@@ -1,0 +1,70 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.Tooltip?>
+<BorderPane fx:id="mainBorderPane" fx:controller="com.kushwahatechnologies.todolist.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <MenuItem text="New" onAction="#showNewItemDialog"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit" onAction="#handleExitApplication"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <HBox spacing="10">
+                    <Button onAction="#showNewItemDialog" fx:id="createNewTODOItem">
+                        <graphic>
+                            <ImageView fx:id="createNewTODOItemImage">
+                                    <!-- handle this via code in Controller class -->
+                                    <!-- <Image url="@/toolbarButtonGraphics/general/New24.gif" />-->
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <ToggleButton fx:id="filterToggleButton" text="Today's Items" onAction="#handleFilterButton">
+                        <tooltip>
+                            <Tooltip text="Button Down: show Today's items only" />
+                        </tooltip>
+                        <graphic>
+                            <ImageView fx:id="filterTodayItemsImageView"/>
+                        </graphic>
+                    </ToggleButton>
+                </HBox>
+            </ToolBar>
+        </VBox>
+    </top>
+    <left>
+        <ListView fx:id="todoListView" onKeyPressed="#handleKeyPressed" />
+    </left>
+    <center>
+        <VBox style="-fx-background-color: white;">
+            <TextArea fx:id="itemDetailedTextArea" VBox.vgrow="ALWAYS"/>
+            <HBox>
+                <Label text="Deo: " style="-fx-background-color: #FFFFFF; ">
+                    <font>
+                        <Font name="Times New Roman bold" size="19" />
+                    </font>
+                </Label>
+                <Label fx:id="deadLineLabel" style="-fx-background-color: #FFFFFF;">
+                    <font>
+                        <Font name="Times New Roman" size="19" />
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

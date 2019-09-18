@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/javafx-swt.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.base.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.controls.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.fxml.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.graphics.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.media.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.swing.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/javafx.web.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/src.zip!/javafx.base" />
+          <root url="jar://$MODULE_DIR$/lib/src.zip!/javafx.controls" />
+          <root url="jar://$MODULE_DIR$/lib/src.zip!/javafx.fxml" />
+          <root url="jar://$MODULE_DIR$/lib/src.zip!/javafx.graphics" />
+          <root url="jar://$MODULE_DIR$/lib/src.zip!/javafx.media" />
+          <root url="jar://$MODULE_DIR$/lib/src.zip!/javafx.swing" />
+          <root url="jar://$MODULE_DIR$/lib/src.zip!/javafx.web" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jlfgr.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
